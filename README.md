@@ -2,9 +2,9 @@
 
 # Mui path imports
 
-Use path import to avoid pulling in unused modules.
+[![CI:UT](https://github.com/kajirikajiri/eslint-plugin-mui-path-imports/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/kajirikajiri/eslint-plugin-mui-path-imports/actions/workflows/npm-publish.yml)
 
-Decreases waiting time.
+Use path import to avoid pulling in unused modules. Decreases waiting time.
 
 BEFORE
 ```
