@@ -1,4 +1,4 @@
-![logo](./logo.png)
+<img width="100" src="https://user-images.githubusercontent.com/37785038/173216745-5e784fdf-d233-4323-bdf8-483807d40096.svg"/>
 
 # Mui path imports
 
