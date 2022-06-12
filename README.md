@@ -6,6 +6,8 @@
 
 Use path import to avoid pulling in unused modules. Decreases waiting time.
 
+Reduces about 10000 modules.
+
 BEFORE
 ```
 event - compiled successfully in 287 ms (11756 modules)
@@ -57,7 +59,7 @@ Add `plugin` and `rules` to the plugins section of your `.eslintrc` configuratio
 }
 ```
 
-And eslint --fix.
+And eslint --fix
 
 ```javascript
 import { Box } from '@mui/material';
