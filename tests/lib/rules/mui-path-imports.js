@@ -30,7 +30,16 @@ ruleTester.run("rule", rule, {
       code: `import { Theme } from "@mui/material";`
     },
     {
-      code: `import { Box } from "other/package";`
+      code: `import { SvgIconTypeMap } from "@mui/material";`
+    },
+    {
+      code: `import { SvgIconTypeMap, Theme } from "@mui/material";`
+    },
+    {
+      code: `import { Theme, SvgIconTypeMap } from "@mui/material";`
+    },
+    {
+      code: `import { Other } from "other/package";`
     },
   ],
 
@@ -62,6 +71,24 @@ import Card from "@mui/material/Card";`
       errors: [{ message: "error: !mui-toplevel-import", type: "" }],
       output: `import Box from "@mui/material/Box";
 import { Theme } from "@mui/material";`,
+    },
+    {
+      code: `import { Box, Theme, SvgIconTypeMap } from "@mui/material";`,
+      errors: [{ message: "error: !mui-toplevel-import", type: "" }],
+      output: `import Box from "@mui/material/Box";
+import { Theme, SvgIconTypeMap } from "@mui/material";`
+    },
+    {
+      code: `import { Theme, Box, SvgIconTypeMap } from "@mui/material";`,
+      errors: [{ message: "error: !mui-toplevel-import", type: "" }],
+      output: `import Box from "@mui/material/Box";
+import { Theme, SvgIconTypeMap } from "@mui/material";`
+    },
+    {
+      code: `import { Theme, SvgIconTypeMap, Box } from "@mui/material";`,
+      errors: [{ message: "error: !mui-toplevel-import", type: "" }],
+      output: `import Box from "@mui/material/Box";
+import { Theme, SvgIconTypeMap } from "@mui/material";`
     },
   ],
 });
