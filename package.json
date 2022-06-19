@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-mui-path-imports",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Use path import to avoid pulling in unused modules.",
   "keywords": [
     "eslint",
@@ -32,5 +32,5 @@
   "peerDependencies": {
     "eslint": ">=6"
   },
-  "license": "ISC"
+  "license": "MIT"
 }
