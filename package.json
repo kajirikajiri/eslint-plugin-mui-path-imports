@@ -12,9 +12,14 @@
   ],
   "author": "kajirikajiri",
   "main": "lib/index.js",
+  "license": "MIT",
   "scripts": {
     "lint": "eslint .",
     "test": "mocha tests --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kajirikajiri/eslint-plugin-mui-path-imports"
   },
   "dependencies": {
     "requireindex": "^1.2.0"
@@ -31,6 +36,5 @@
   },
   "peerDependencies": {
     "eslint": ">=6"
-  },
-  "license": "MIT"
+  }
 }
