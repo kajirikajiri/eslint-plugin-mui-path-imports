@@ -27,6 +27,9 @@ ruleTester.run("rule", rule, {
       code: `import Add from "@mui/icons-material/Add";`
     },
     {
+      code: `import TreeView from "@mui/lab/TreeView";`
+    },
+    {
       code: `import { Theme } from "@mui/material";`
     },
     {
@@ -55,6 +58,11 @@ ruleTester.run("rule", rule, {
       output: `import Box from "@mui/material/Box";`
     },
     {
+      code: `import { TreeView } from "@mui/lab";`,
+      errors: [{ message: "error: !mui-toplevel-import", type: "" }],
+      output: `import TreeView from "@mui/lab/TreeView";`
+    },
+    {
       code: `import { Add, Link } from "@mui/icons-material";`,
       errors: [{ message: "error: !mui-toplevel-import", type: "" }],
       output: `import Add from "@mui/icons-material/Add";
@@ -71,6 +79,12 @@ import Card from "@mui/material/Card";`
       errors: [{ message: "error: !mui-toplevel-import", type: "" }],
       output: `import Box from "@mui/material/Box";
 import { Theme } from "@mui/material";`,
+    },
+    {
+      code: `import { TreeView, TreeItem } from "@mui/lab";`,
+      errors: [{ message: "error: !mui-toplevel-import", type: "" }],
+      output: `import TreeView from "@mui/lab/TreeView";
+import TreeItem from "@mui/lab/TreeItem";`,
     },
     {
       code: `import { Box, Theme, SvgIconTypeMap } from "@mui/material";`,
