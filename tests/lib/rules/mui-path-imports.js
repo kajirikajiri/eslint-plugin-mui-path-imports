@@ -49,7 +49,7 @@ ruleTester.run("rule", rule, {
     },
     {
       code: `import type { TextFieldProps as MuiTextFieldProps } from '@mui/material';`,
-      options: [{ allowType: true }],
+      options: [{ ignoreImportTypeKeyword: true }],
     },
     {
       code: `import type { TextFieldProps } from '@mui/material/Textfield';`,
