@@ -104,7 +104,7 @@ import TreeItem from "@mui/lab/TreeItem";`,
       code: `import { Button, Select } from "@mui/joy";`,
       errors: [{ message: "error: !mui-toplevel-import", type: "" }],
       output: `import Button from "@mui/joy/Button";
-import Select from "@mui/joy/Select";`
+import Select from "@mui/joy/Select";`,
     },
     {
       code: `import { Box, Theme, SvgIconTypeMap } from "@mui/material";`,
