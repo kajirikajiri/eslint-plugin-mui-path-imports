@@ -80,7 +80,7 @@ ruleTester.run("rule", rule, {
       code: `import { Add, Link } from "@mui/icons-material";`,
       errors: [{ message: "error: !mui-toplevel-import", type: "" }],
       output: `import Add from "@mui/icons-material/Add";
-import Link from "@mui/icons-material/Link";`
+import Link from "@mui/icons-material/Link";`,
     },
     {
       code: `import { Box, Card } from "@mui/material";`,
@@ -92,13 +92,13 @@ import Card from "@mui/material/Card";`
       code: `import { Box, Theme } from "@mui/material";`,
       errors: [{ message: "error: !mui-toplevel-import", type: "" }],
       output: `import Box from "@mui/material/Box";
-import { Theme } from "@mui/material";`
+import { Theme } from "@mui/material";`,
     },
     {
       code: `import { TreeView, TreeItem } from "@mui/lab";`,
       errors: [{ message: "error: !mui-toplevel-import", type: "" }],
       output: `import TreeView from "@mui/lab/TreeView";
-import TreeItem from "@mui/lab/TreeItem";`
+import TreeItem from "@mui/lab/TreeItem";`,
     },
     {
       code: `import { Button, Select } from "@mui/joy";`,
