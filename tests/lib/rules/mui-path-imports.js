@@ -47,6 +47,12 @@ ruleTester.run("rule", rule, {
     {
       code: `import { Other } from "other/package";`
     },
+    {
+      code: `import type { TextFieldProps as MuiTextFieldProps } from '@mui/material';`
+    },
+    {
+      code: `import type { TextFieldProps } from '@mui/material/Textfield';`
+    },
   ],
 
   invalid: [
