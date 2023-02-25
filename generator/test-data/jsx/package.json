@@ -1,0 +1,16 @@
+{
+  "name": "jsx",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@mui/icons-material": "^5.11.9",
+    "@mui/joy": "^5.0.0-alpha.68",
+    "@mui/lab": "^5.0.0-alpha.120",
+    "@mui/material": "^5.11.10",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
