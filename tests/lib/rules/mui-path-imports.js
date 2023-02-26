@@ -77,6 +77,11 @@ ruleTester.run("rule", rule, {
       output: `import Button from "@mui/joy/Button";`
     },
     {
+      code: `import { Button as MyButton } from "@mui/joy";`,
+      errors: [{ message: "error: !mui-toplevel-import", type: "" }],
+      output: `import MyButton from "@mui/joy/Button";`
+    },
+    {
       code: `import { Add, Link } from "@mui/icons-material";`,
       errors: [{ message: "error: !mui-toplevel-import", type: "" }],
       output: `import Add from "@mui/icons-material/Add";
@@ -122,6 +127,12 @@ import { Theme, SvgIconTypeMap } from "@mui/material";`
       code: `import { Theme, SvgIconTypeMap, Box } from "@mui/material";`,
       errors: [{ message: "error: !mui-toplevel-import", type: "" }],
       output: `import Box from "@mui/material/Box";
+import { Theme, SvgIconTypeMap } from "@mui/material";`
+    },
+    {
+      code: `import { Theme, SvgIconTypeMap, Box as MyBox } from "@mui/material";`,
+      errors: [{ message: "error: !mui-toplevel-import", type: "" }],
+      output: `import MyBox from "@mui/material/Box";
 import { Theme, SvgIconTypeMap } from "@mui/material";`
     },
   ],
