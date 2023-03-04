@@ -28,7 +28,9 @@
     "compile": "rimraf lib && rollup --config rollup.config.ts --configPlugin typescript",
     "watch": "rimraf lib && rollup --config rollup.config.ts --configPlugin typescript --watch",
     "postversion": "git push --follow-tags",
-    "prepare": "cd test-data/jsx && npm install"
+    "prepare": "cd test-data/jsx && npm install",
+    "generate": "npx node --loader ts-node/esm generate-json.ts",
+    "check": "npx node --loader ts-node/esm check-json.ts"
   },
   "eslintIgnore": [
     "!.eslintrc.cjs"

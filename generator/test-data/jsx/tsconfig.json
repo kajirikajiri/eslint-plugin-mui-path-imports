@@ -9,6 +9,7 @@
         "allowSyntheticDefaultImports": true,
         "resolveJsonModule": true,
         "moduleResolution": "node",
-        "noLib": true,
+        "lib": ["ES2020", "DOM"],
+        "skipLibCheck": true,
     },
 }

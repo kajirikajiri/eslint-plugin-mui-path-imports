@@ -1,6 +1,5 @@
 {
   "@mui/material": {
-    "OverridableComponent": "@mui/material/OverridableComponent",
     "Accordion": "@mui/material/Accordion",
     "AccordionActions": "@mui/material/AccordionActions",
     "AccordionDetails": "@mui/material/AccordionDetails",
