@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-mui-path-imports",
-  "version": "0.0.14",
+  "version": "0.0.15",
   "description": "Use path import to avoid pulling in unused modules.",
   "keywords": [
     "eslint",
