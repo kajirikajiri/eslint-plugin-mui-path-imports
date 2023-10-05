@@ -4,6 +4,8 @@
 
 [![CI:UT](https://github.com/kajirikajiri/eslint-plugin-mui-path-imports/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/kajirikajiri/eslint-plugin-mui-path-imports/actions/workflows/npm-publish.yml)
 
+## Deprecated: See [this comment](https://github.com/kajirikajiri/eslint-plugin-mui-path-imports/issues/39) for more info.
+
 Use path import to avoid pulling in unused modules. Decreases waiting time.
 
 Reduces about 10000 modules.
